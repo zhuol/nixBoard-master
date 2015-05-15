@@ -292,6 +292,7 @@ function record_dead_body(db) {
 	}
 	return ret;
 }
+
 function clean_dead_body(db) {
 	for (var i = 0; i < db.length; i++) {
 		pan[db[i][0]][db[i][1]] = 0;
@@ -313,6 +314,7 @@ function fill_block_have_air(row, col, color) {
 	//alert("fill block 无气！！！");
 	return false;
 }
+
 /* 提吃判断专用 */
 function anti_fill_block_have_air(color) {
 	for (var i = 0; i < pan.length; i++) {
@@ -325,6 +327,7 @@ function anti_fill_block_have_air(color) {
 	//alert("anti fill block 无气！！！");
 	return false; //死
 }
+
 /* 将盘面做个影分身 */
 function make_shadow() {
 	for (var i = 0; i < pan.length; i++) {
@@ -333,6 +336,7 @@ function make_shadow() {
 		}
 	}
 }
+
 function shadow_to_pan() {
 	for (var i = 0; i < pan.length; i++) {
 		for (var j = 0; j < pan[i].length; j++) {
@@ -434,11 +438,7 @@ function have_air(row, col) {
 		} else {
 			return true;
 		}
-	}
-
-
-
-		
+	}	
 }
 
 /* 坐标周围是否有我方的棋子 */
