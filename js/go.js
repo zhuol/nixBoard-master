@@ -18,7 +18,6 @@ function grid(cxt) {
 		cxt.lineTo((i+1)*30, 600-30);
 		cxt.stroke();
 	}
-
 }
 function ninePoints(cxt) {
 	var np = new Array(
@@ -35,7 +34,6 @@ function ninePoints(cxt) {
 		cxt.fill();
 	}
 }
-
 
 var move_count = 0;
 function mousedownHandler(e) {
